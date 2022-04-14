@@ -1,0 +1,60 @@
+2022-04-04T22:42:27.922231+0400 ERROR TypeError filter_by() takes 1 positional argument but 2 were given
+--Request--
+{'userId': 2, 'categoryName': 'Продукты'}
+2022-04-04T22:43:16.535799+0400 ERROR InvalidRequestError Entity namespace for "user" has no property "user_id"
+--Request--
+{'userId': 2, 'categoryName': 'Продукты'}
+2022-04-04T22:50:31.393310+0400 ERROR TypeError filter() got an unexpected keyword argument 'id'
+--Request--
+{'subcategoryId': 5}
+2022-04-04T22:53:03.228452+0400 ERROR TypeError Object of type BaseQuery is not JSON serializable
+--Request--
+{'userId': 1, 'accountName': 'Мой счет', 'amount': '15000.00'}
+2022-04-04T22:55:36.143905+0400 ERROR AttributeError 'Account' object has no attribute '__name__'
+--Request--
+{'userId': 1, 'accountName': 'Мой счет', 'amount': '15000.00'}
+2022-04-04T22:56:40.662435+0400 ERROR AttributeError 'Account' object has no attribute '__name__'
+--Request--
+{'userId': 1, 'accountName': 'Мой счет', 'amount': '15000.00'}
+2022-04-04T22:58:20.376982+0400 ERROR TypeError Object of type BaseQuery is not JSON serializable
+--Request--
+{'userId': 1}
+2022-04-04T23:01:29.721833+0400 ERROR TypeError Object of type BaseQuery is not JSON serializable
+--Request--
+{'userId': 1}
+2022-04-05T01:07:27.749313+0400 ERROR TypeError unsupported operand type(s) for -=: 'decimal.Decimal' and 'str'
+--Request--
+{'chequeName': 'Мой чек', 'date': '03.12.2021', 'accountId': 1, 'positiveCheque': False, 'sum': '925.78', 'chequeComment': 'Тут должен быть комментарий', 'products': [{'cost': '5.99', 'count_product': 1, 'productName': 'Пакет Гулливер большой', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '19.99', 'count_product': 1, 'productName': 'Лук репчатый', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '40.99', 'count_product': 1, 'productName': 'Ж.р.Орбит XXL Белоснежный Нежная мята 20.4г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '89.99', 'count_product': 2, 'productName': 'Творог ВОЛЖСКИЕ ПРОСТОРЫ 9% 300г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '44.99', 'count_product': 3, 'productName': 'Молоко ВОЛЖСКИЕ ПРОСТОРЫ 3.2% 900г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '79.99', 'count_product': 2, 'productName': 'Сметана ВОЛЖСКИЕ ПРОСТОРЫ 15% 450г ф/п', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '129.99', 'count_product': 1, 'productName': 'Чипсы PRINGLES 165г Зеленый лук', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '499.99', 'count_product': 1, 'productName': 'Сыр МОЛОЧНЫЙ МИР 45% Белорусское золото фас', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '39.99', 'count_product': 2, 'productName': 'Шок.Альпен голд 85г молочный Дробленый фундук', 'categoryId': 4, 'subcategoryId': 6}]}
+2022-04-05T01:07:43.675419+0400 ERROR TypeError unsupported operand type(s) for -=: 'decimal.Decimal' and 'float'
+--Request--
+{'chequeName': 'Мой чек', 'date': '03.12.2021', 'accountId': 1, 'positiveCheque': False, 'sum': 925.78, 'chequeComment': 'Тут должен быть комментарий', 'products': [{'cost': '5.99', 'count_product': 1, 'productName': 'Пакет Гулливер большой', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '19.99', 'count_product': 1, 'productName': 'Лук репчатый', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '40.99', 'count_product': 1, 'productName': 'Ж.р.Орбит XXL Белоснежный Нежная мята 20.4г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '89.99', 'count_product': 2, 'productName': 'Творог ВОЛЖСКИЕ ПРОСТОРЫ 9% 300г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '44.99', 'count_product': 3, 'productName': 'Молоко ВОЛЖСКИЕ ПРОСТОРЫ 3.2% 900г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '79.99', 'count_product': 2, 'productName': 'Сметана ВОЛЖСКИЕ ПРОСТОРЫ 15% 450г ф/п', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '129.99', 'count_product': 1, 'productName': 'Чипсы PRINGLES 165г Зеленый лук', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '499.99', 'count_product': 1, 'productName': 'Сыр МОЛОЧНЫЙ МИР 45% Белорусское золото фас', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '39.99', 'count_product': 2, 'productName': 'Шок.Альпен голд 85г молочный Дробленый фундук', 'categoryId': 4, 'subcategoryId': 6}]}
+2022-04-05T01:24:11.636028+0400 ERROR AttributeError module 'datetime' has no attribute 'strptime'
+--Request--
+{'dateFrom': '01.01.2020', 'dateTo': '01.01.2023', 'positiveCheque': False}
+2022-04-05T01:24:48.904194+0400 ERROR ValueError time data '01.01.2020' does not match format '%Y%m%d'
+--Request--
+{'dateFrom': '01.01.2020', 'dateTo': '01.01.2023', 'positiveCheque': False}
+2022-04-05T01:26:28.768206+0400 ERROR AttributeError 'NoneType' object has no attribute 'account_name'
+--Request--
+{'dateFrom': '01.01.2020', 'dateTo': '01.01.2023', 'positiveCheque': False}
+2022-04-05T01:32:08.534770+0400 ERROR TypeError unhashable type: 'list'
+--Request--
+{'dateFrom': '01.01.2020', 'dateTo': '01.01.2023', 'positiveCheque': False}
+2022-04-05T11:02:02.368360+0400 ERROR BadRequestKeyError 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+--Request--
+None
+2022-04-05T11:07:58.169734+0400 ERROR InvalidRequestError Entity namespace for "subcategory" has no property "user_id"
+--Request--
+None
+2022-04-05T11:09:31.703113+0400 ERROR AttributeError 'NoneType' object has no attribute 'product_name'
+--Request--
+None
+2022-04-05T12:46:31.563006+0400 ERROR ProgrammingError (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: SELECT category.id AS category_id, category.user_id AS category_user_id, category.category_name AS category_category_name 
+FROM category 
+WHERE category.user_id = %(user_id_1)s AND category.category_name = %(category_name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'user_id_1': {'qr-text': 't=20220310T1825&s=1632.40&fn=9280440300830384&i=74256&fp=1041491987&n=1'}, 'category_name_1': 'Другое', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+--Request--
+None

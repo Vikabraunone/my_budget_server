@@ -1,0 +1,68 @@
+2022-04-04T22:37:28.808314+0400 INFO RegistrationEmailExists
+2022-04-04T22:39:29.664581+0400 INFO RegistrationEmailExistsПользователь с таким email vika@vika.ru уже зарегистрирован.{'username': 'vika', 'email': 'vika@vika.ru', 'password': '123'}
+2022-04-04T22:40:33.417096+0400 INFO RegistrationEmailExists Пользователь с таким email vika@vika.ru уже зарегистрирован.
+--Request--
+{'username': 'vika', 'email': 'vika@vika.ru', 'password': '123'}
+2022-04-04T22:42:27.922231+0400 ERROR TypeError filter_by() takes 1 positional argument but 2 were given
+--Request--
+{'userId': 2, 'categoryName': 'Продукты'}
+2022-04-04T22:43:16.535799+0400 ERROR InvalidRequestError Entity namespace for "user" has no property "user_id"
+--Request--
+{'userId': 2, 'categoryName': 'Продукты'}
+2022-04-04T22:43:38.885427+0400 INFO UserNotFound Пользователь не найден
+--Request--
+{'userId': 2, 'categoryName': 'Продукты'}
+2022-04-04T22:43:48.717528+0400 INFO DatabaseEntryExists Категория "Продукты" уже существует.
+--Request--
+{'userId': 1, 'categoryName': 'Продукты'}
+2022-04-04T22:44:34.282709+0400 INFO DatabaseEntryNotFound Категория не найден(a).
+--Request--
+{'userId': 2, 'categoryId': 1, 'categoryName': 'Услуги'}
+2022-04-04T22:48:14.006340+0400 INFO JsonIncorrectStructure Неверная структура json.
+--Request--
+{'userId': 1, 'categoryId': 3, 'subcategoryName': 'Масло'}
+2022-04-04T22:49:15.536759+0400 INFO DatabaseEntryNotFound Категория не найден(a).
+--Request--
+{'categoryId': 1, 'subcategoryId': 4, 'subcategoryName': 'Молоко'}
+2022-04-04T22:50:31.393310+0400 ERROR TypeError filter() got an unexpected keyword argument 'id'
+--Request--
+{'subcategoryId': 5}
+2022-04-04T22:51:39.502266+0400 INFO DatabaseEntryNotFound Подкатегория не найден(a).
+--Request--
+{'subcategoryId': 5}
+2022-04-04T22:53:03.228452+0400 ERROR TypeError Object of type BaseQuery is not JSON serializable
+--Request--
+{'userId': 1, 'accountName': 'Мой счет', 'amount': '15000.00'}
+2022-04-04T22:55:36.143905+0400 ERROR AttributeError 'Account' object has no attribute '__name__'
+--Request--
+{'userId': 1, 'accountName': 'Мой счет', 'amount': '15000.00'}
+2022-04-04T22:56:40.662435+0400 ERROR AttributeError 'Account' object has no attribute '__name__'
+--Request--
+{'userId': 1, 'accountName': 'Мой счет', 'amount': '15000.00'}
+2022-04-04T22:57:46.446856+0400 INFO DatabaseEntryExists Счет "Мой счет" уже существует.
+--Request--
+{'userId': 1, 'accountName': 'Мой счет', 'amount': '15000.00'}
+2022-04-04T22:58:00.769450+0400 INFO DatabaseEntryExists Счет "Мой счет" уже существует.
+--Request--
+{'userId': 1, 'accountName': 'Мой счет', 'amount': '15000.00'}
+2022-04-04T22:58:20.376982+0400 ERROR TypeError Object of type BaseQuery is not JSON serializable
+--Request--
+{'userId': 1}
+2022-04-04T23:01:29.721833+0400 ERROR TypeError Object of type BaseQuery is not JSON serializable
+--Request--
+{'userId': 1}
+2022-04-04T23:15:54.442006+0400 INFO JsonIncorrectStructure Неверная структура json.
+--Request--
+{'chequeName': 'Мой чек', 'date': '03.12.2021', 'products': [{'cost': '5.99', 'count_product': 1, 'productName': 'Пакет Гулливер большой', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '19.99', 'count_product': 1, 'productName': 'Лук репчатый', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '40.99', 'count_product': 1, 'productName': 'Ж.р.Орбит XXL Белоснежный Нежная мята 20.4г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '89.99', 'count_product': 2, 'productName': 'Творог ВОЛЖСКИЕ ПРОСТОРЫ 9% 300г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '44.99', 'count_product': 3, 'productName': 'Молоко ВОЛЖСКИЕ ПРОСТОРЫ 3.2% 900г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '79.99', 'count_product': 2, 'productName': 'Сметана ВОЛЖСКИЕ ПРОСТОРЫ 15% 450г ф/п', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '129.99', 'count_product': 1, 'productName': 'Чипсы PRINGLES 165г Зеленый лук', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '499.99', 'count_product': 1, 'productName': 'Сыр МОЛОЧНЫЙ МИР 45% Белорусское золото фас', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '39.99', 'count_product': 2, 'productName': 'Шок.Альпен голд 85г молочный Дробленый фундук', 'categoryId': 4, 'subcategoryId': 6}], 'sum': '925.78'}
+2022-04-04T23:16:24.849125+0400 INFO JsonIncorrectStructure Неверная структура json.
+--Request--
+{'chequeName': 'Мой чек', 'date': '03.12.2021', 'accountId': 1, 'products': [{'cost': '5.99', 'count_product': 1, 'productName': 'Пакет Гулливер большой', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '19.99', 'count_product': 1, 'productName': 'Лук репчатый', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '40.99', 'count_product': 1, 'productName': 'Ж.р.Орбит XXL Белоснежный Нежная мята 20.4г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '89.99', 'count_product': 2, 'productName': 'Творог ВОЛЖСКИЕ ПРОСТОРЫ 9% 300г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '44.99', 'count_product': 3, 'productName': 'Молоко ВОЛЖСКИЕ ПРОСТОРЫ 3.2% 900г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '79.99', 'count_product': 2, 'productName': 'Сметана ВОЛЖСКИЕ ПРОСТОРЫ 15% 450г ф/п', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '129.99', 'count_product': 1, 'productName': 'Чипсы PRINGLES 165г Зеленый лук', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '499.99', 'count_product': 1, 'productName': 'Сыр МОЛОЧНЫЙ МИР 45% Белорусское золото фас', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '39.99', 'count_product': 2, 'productName': 'Шок.Альпен голд 85г молочный Дробленый фундук', 'categoryId': 4, 'subcategoryId': 6}], 'sum': '925.78'}
+2022-04-04T23:17:04.291065+0400 INFO JsonIncorrectStructure Неверная структура json.
+--Request--
+{'chequeName': 'Мой чек', 'date': '03.12.2021', 'accountId': 1, 'positiveCheque': False, 'products': [{'cost': '5.99', 'count_product': 1, 'productName': 'Пакет Гулливер большой', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '19.99', 'count_product': 1, 'productName': 'Лук репчатый', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '40.99', 'count_product': 1, 'productName': 'Ж.р.Орбит XXL Белоснежный Нежная мята 20.4г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '89.99', 'count_product': 2, 'productName': 'Творог ВОЛЖСКИЕ ПРОСТОРЫ 9% 300г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '44.99', 'count_product': 3, 'productName': 'Молоко ВОЛЖСКИЕ ПРОСТОРЫ 3.2% 900г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '79.99', 'count_product': 2, 'productName': 'Сметана ВОЛЖСКИЕ ПРОСТОРЫ 15% 450г ф/п', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '129.99', 'count_product': 1, 'productName': 'Чипсы PRINGLES 165г Зеленый лук', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '499.99', 'count_product': 1, 'productName': 'Сыр МОЛОЧНЫЙ МИР 45% Белорусское золото фас', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '39.99', 'count_product': 2, 'productName': 'Шок.Альпен голд 85г молочный Дробленый фундук', 'categoryId': 4, 'subcategoryId': 6}], 'sum': '925.78'}
+2022-04-04T23:18:02.588344+0400 INFO KeyJsonNotFound Получен неизвестный ключ chequeComment.
+--Request--
+{'chequeName': 'Мой чек', 'date': '03.12.2021', 'accountId': 1, 'positiveCheque': False, 'sum': '925.78', 'chequeComment': 'Тут должен быть комментарий', 'products': [{'cost': '5.99', 'count_product': 1, 'productName': 'Пакет Гулливер большой', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '19.99', 'count_product': 1, 'productName': 'Лук репчатый', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '40.99', 'count_product': 1, 'productName': 'Ж.р.Орбит XXL Белоснежный Нежная мята 20.4г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '89.99', 'count_product': 2, 'productName': 'Творог ВОЛЖСКИЕ ПРОСТОРЫ 9% 300г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '44.99', 'count_product': 3, 'productName': 'Молоко ВОЛЖСКИЕ ПРОСТОРЫ 3.2% 900г', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '79.99', 'count_product': 2, 'productName': 'Сметана ВОЛЖСКИЕ ПРОСТОРЫ 15% 450г ф/п', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '129.99', 'count_product': 1, 'productName': 'Чипсы PRINGLES 165г Зеленый лук', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '499.99', 'count_product': 1, 'productName': 'Сыр МОЛОЧНЫЙ МИР 45% Белорусское золото фас', 'categoryId': 4, 'subcategoryId': 6}, {'cost': '39.99', 'count_product': 2, 'productName': 'Шок.Альпен голд 85г молочный Дробленый фундук', 'categoryId': 4, 'subcategoryId': 6}]}
+2022-04-05T01:24:11.636028+0400 ERROR AttributeError module 'datetime' has no attribute 'strptime'
+--Request--
+{'dateFrom': '01.01.2020', 'dateTo': '01.01.2023', 'positiveCheque': False}
